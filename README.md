@@ -3,10 +3,10 @@
 
 4/13
 
-reactをimportする必要がある
-React.Componentを継承する必要がある
-renderメソッド内のreturn内にJSX形式で記述されたコードがブラウザに表示される
-JSX外で定義された変数はJSX内でブレースをつけて呼び出すと参照できる
+- reactをimportする必要がある
+- React.Componentを継承する必要がある
+- renderメソッド内のreturn内にJSX形式で記述されたコードがブラウザに表示される
+- JSX外で定義された変数はJSX内でブレースをつけて呼び出すと参照できる
 
 ```js
 import React from 'react'
