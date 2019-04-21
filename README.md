@@ -1,7 +1,7 @@
 # React学習まとめ
 - progate
 
-4/13
+## Progageまとめ
 
 - reactをimportする必要がある
 - React.Componentを継承する必要がある
@@ -23,5 +23,24 @@ class App extends React.Component{
 export default App;
 ```
 
+## ボタン押下で表示する値を変える
+- `<button onClick={()=>{ハンドラ}}`
+- 処理に合わせて出力する値を変えたいときreactでは`state`というオブジェクトを`constructor`内で作成し、その値をイベントハンドラで変える
+- `state`の値を変更する際は`this.setState()`を用いること
+```js
+constructor(props){
+  super(props);
+  this.state = { name: '太郎' };
+}
+render(){
+  return{
+    <div>
+      <h1>こんにちは{this.state.name}さん</h1>
+      <button onClick={()=>{this.setState({name: '太郎'})}}>太郎</button>
+      <button onClick={()=>{this.setState({name:  '二郎'})}}>二郎</button>
 
----
+
+    </div>
+  }
+}
+```
